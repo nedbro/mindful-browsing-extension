@@ -2,6 +2,10 @@
 <html>
   <head>
     <style>
+      body {
+        width: 20rem;
+      }
+
       .deleteButton {
         display: inline-block;
         margin-left: 3rem;
@@ -10,7 +14,14 @@
       li {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         font-size: 1rem;
+        width: 90%;
+        margin-bottom: 0.5rem;
+      }
+
+      li > * {
+        display: flex !important;
       }
     </style>
   </head>

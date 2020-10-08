@@ -8,7 +8,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
           if (response.allowedUrl) {
             chrome.storage.sync.set({ allowedUrl: response.allowedUrl }, () => {
               if (response.allowedUrl !== "") {
-                chrome.tabs.update({ url: response.allowedUrl });
+                chrome.tabs.update(tabId, { url: response.allowedUrl });
               }
             });
           }
