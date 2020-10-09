@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
           if (includes) {
             createRelaxPage();
-            await sleep(3000);
+            await sleep(20000);
             sendResponse({ allowedUrl: request.url });
           }
         }
